@@ -4,29 +4,6 @@
 	grid-template-rows: 100px auto;
 }
 
-header {
-	background-color: hsl(193, 95%, 98%);
-	grid-row-start: 1;
-	grid-column-start: span 2;
-	display: flex;
-	align-items: center;
-}
-
-header .header__img {
-	margin: 5px;
-	color: #61DAFB;
-	font-size: 2rem;
-}
-
-header .header__img::before {
-	content: '';
-	margin: 5px;
-	width: 100px;
-	height: 100px;
-	padding: 50px;
-	background:  url(./logo.svg) no-repeat center/150px 150px ;
-}
-
 .navbar {
 	grid-column-start: 1;
 	grid-row-start: 2;

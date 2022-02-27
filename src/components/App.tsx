@@ -1,13 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './Header/Header';
 
 function App() {
 	return (
 		<div className="app">
-			<header className="header">
-				<div className="header__img">React.Net</div>
-			</header>
+			<Header />
 			<main>
 				{/* <div className="banner">
 					<img src="https://source.unsplash.com/900x300/?beach" alt="banner" />
