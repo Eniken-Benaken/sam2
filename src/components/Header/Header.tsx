@@ -5,8 +5,8 @@ import s from './Header.module.css'
 const Header = (props: any) => {
 	return (
 		<header className={s.header}>
-				<img className={s.header__img} src={logo} alt="logo" />
-				<div className={s.header__text}>React.Net</div>
+				<img className={s.header_img} src={logo} alt="logo" />
+				<div className={s.header_text}>React.Net</div>
 		</header>
 	)
 }

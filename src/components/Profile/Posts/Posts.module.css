@@ -1,0 +1,32 @@
+.posts h3 {
+	padding: 10px;
+	font-size: 1.5rem;
+}
+
+.posts .post_new form{
+	display: flex;
+	flex-direction: column;
+	height: 70px;
+}
+
+.posts form textarea {
+	margin: 5px;
+	padding: 5px;
+	resize: none;
+	width: 95%;
+	height: 100px;
+	border: 1px solid hsl(193, 95%, 90%);
+}
+
+.posts form button {
+	align-self: flex-end;
+	width: 70px;
+	height: 20px;
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: hsl(193, 95%, 80%);
+	border-radius: 5px;
+	margin-right: 50px;
+}
+

@@ -1,0 +1,16 @@
+.navbar {
+	grid-column-start: 1;
+	grid-row-start: 2;
+	color: #61DAFB;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.navbar_item {
+	padding: 10px;
+}
+
+.navbar .navbar_item:last-child {
+	padding-top: 20px;
+}
+
