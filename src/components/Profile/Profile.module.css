@@ -1,0 +1,85 @@
+main {
+	grid-column-start: 2;
+	grid-row-start: 2;
+}
+
+main .profile {
+	display: flex;
+}
+
+.profile .profile__photo img{
+	width: 190px;
+	height: 190px;
+	padding: 5px;
+	border-radius: 10px;
+	overflow: hidden;
+	width: 200px;
+	height: 200px;
+}
+
+.profile .profile__info h3 {
+	padding: 10px;
+	font-size: 1.5rem;
+}
+
+.profile .profile__info p {
+	padding: 5px;
+	font-size: 1.1rem;
+}
+
+.posts {
+	display: flex;
+	flex-direction: column;
+	padding: 5px;
+}
+
+.posts h3 {
+	padding: 10px;
+	font-size: 1.5rem;
+}
+
+.posts .post__new form{
+	display: flex;
+	flex-direction: column;
+	height: 70px;
+}
+
+.posts form textarea {
+	margin: 5px;
+	padding: 5px;
+	resize: none;
+	width: 95%;
+	height: 100px;
+	border: 1px solid hsl(193, 95%, 90%);
+}
+
+.posts form button {
+	align-self: flex-end;
+	width: 70px;
+	height: 20px;
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: hsl(193, 95%, 80%);
+	border-radius: 5px;
+	margin-right: 50px;
+}
+
+.posts .post {
+	display: flex;
+	padding: 10px;	
+	padding-left: 5px;
+}
+
+.post .post__avatar {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.post .post__message {
+	font-size: 1.2rem;
+	padding-left: 20px;
+	padding-top: 6px;
+}

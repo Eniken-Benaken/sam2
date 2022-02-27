@@ -1,9 +1,10 @@
 header {
-	background-color: hsl(193, 95%, 98%);
+	background-color: hsl(193, 95%, 96%);
 	grid-row-start: 1;
 	grid-column-start: span 2;
 	display: flex;
 	align-items: center;
+	border-radius: 0 0 10px 10px ;
 }
 
 header .header__img {
