@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
+.app {
+	display: grid;
+	grid-template-columns: 150px auto;
+	grid-template-rows: 100px auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+	background-color: hsl(193, 95%, 98%);
+	grid-row-start: 1;
+	grid-column-start: span 2;
+	display: flex;
+	align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header .header__img {
+	margin: 5px;
+	color: #61DAFB;
+	font-size: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header .header__img::before {
+	content: '';
+	margin: 5px;
+	width: 100px;
+	height: 100px;
+	padding: 50px;
+	background:  url(./logo.svg) no-repeat center/150px 150px ;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar {
+	grid-column-start: 1;
+	grid-row-start: 2;
+	color: #61DAFB;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar__item {
+	padding: 10px;
+}
+
+.navbar .navbar__item:last-child {
+	padding-top: 20px;
+}
+
+main {
+	grid-column-start: 2;
+	grid-row-start: 2;
+}
+
+main .profile {
+	display: flex;
+}
+
+.profile .profile__photo {
+	background: url(https://source.unsplash.com/200x200/?people) no-repeat center/190px 190px;
+	border-radius: 20px;
+	overflow: hidden;
+	width: 200px;
+	height: 200px;
+}
+
+.profile .profile__info h3 {
+	padding: 10px;
+	font-size: 1.5rem;
+}
+
+.profile .profile__info p {
+	padding: 5px;
+	font-size: 1.1rem;
+}
+
+.posts {
+	display: flex;
+	flex-direction: column;
+	padding: 5px;
+}
+
+.posts h3 {
+	padding: 10px;
+	font-size: 1.5rem;
+}
+
+.posts .post__new form{
+	display: flex;
+	flex-direction: column;
+	height: 70px;
+}
+
+.posts form textarea {
+	margin: 5px;
+	padding: 5px;
+	resize: none;
+	width: 95%;
+	height: 100px;
+	border: 1px solid hsl(193, 95%, 90%);
+}
+
+.posts form button {
+	align-self: flex-end;
+	width: 70px;
+	height: 20px;
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: hsl(193, 95%, 80%);
+	border-radius: 5px;
+	margin-right: 50px;
+}
+
+.posts .post {
+	display: flex;
+	padding: 10px;	
+	padding-left: 5px;
+}
+
+.post .post__avatar {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.post .post__message {
+	font-size: 1.2rem;
+	padding-left: 20px;
+	padding-top: 6px;
 }
