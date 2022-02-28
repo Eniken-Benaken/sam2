@@ -1,0 +1,26 @@
+.dialog {
+	display: flex;
+	align-items: center;
+}
+
+.dialog .dialog_avatar {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.dialog_avatar img {
+	width: inherit;
+	height: inherit;
+}
+
+.dialog .dialog_name {
+	font-size: 1.2rem;
+	margin-left: 15px;
+}
+
+.dialog.dialog_current {
+	background-color: hsl(193, 95%, 90%);
+	border-radius: 30% 10px 10px 30%;
+}

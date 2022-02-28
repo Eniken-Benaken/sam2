@@ -1,0 +1,40 @@
+.message {
+	position        : relative;
+	background-color: hsl(193, 95%, 95%);
+	font-size       : 1.1rem;
+	padding         : 7px;
+	margin          : 1px;
+	width           : fit-content;
+	border-radius   : 7px;
+}
+
+.message::before {
+	position    : absolute;
+	content     : '';
+	width       : 0;
+	height      : 0;
+	border-style: solid;
+	border-width: 0 0 10px 10px;
+	border-color: transparent transparent hsl(193, 95%, 95%) transparent;
+	bottom      : 0;
+	left        : -5px;
+}
+
+.message.own {
+	align-self      : flex-end;
+	text-align      : end;
+	background-color: hsl(193, 95%, 95%);
+}
+
+.message.own::before {
+	position    : absolute;
+	content     : '';
+	width       : 0;
+	height      : 0;
+	border-style: solid;
+	border-width: 10px 0 0 10px;
+	border-color: transparent transparent transparent hsl(193, 95%, 95%);
+	bottom      : 0;
+	left: auto;
+	right       : -5px;
+}

@@ -9,7 +9,7 @@ const Posts = (props: any) => {
 			<div className={s.post_new}>
 				<form action="#">
 					<textarea name="post_new" id="post_new" cols={120} placeholder='Tell everyone about what you feel...'></textarea>
-					<button type="submit">Send</button>
+					<button type="submit">Post</button>
 				</form>
 			</div>
 			<Post post_id={2} post_avatar="https://source.unsplash.com/50x50/?people" post_message="Is anyone here?" />
