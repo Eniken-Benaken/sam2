@@ -4,7 +4,7 @@ import s from './Profile.module.css'
 
 const Profile = (props: any) => {
 	return (
-		<main>
+		<>
 			<div className={s.profile}>
 				<div className={s.profile_photo}>
 					<img src="https://source.unsplash.com/200x200/?people" alt="profile_photo" />
@@ -18,7 +18,7 @@ const Profile = (props: any) => {
 				</div>
 			</div>
 			<Posts />
-		</main>
+		</>
 	)
 }
 

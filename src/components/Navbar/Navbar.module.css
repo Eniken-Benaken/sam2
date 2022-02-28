@@ -14,3 +14,10 @@
 	padding-top: 20px;
 }
 
+.navbar_item a {
+	color: #61DAFB;
+}
+
+.navbar_item a.active {
+	text-decoration: underline;
+}

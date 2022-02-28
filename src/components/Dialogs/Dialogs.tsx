@@ -5,7 +5,7 @@ import Message from './Message/Message'
 
 const Dialogs = (props: any) => {
 	return (
-		<main>
+		<div className={s.dialogs_wrapper}>
 			<div className={s.dialogs_container}>
 				<h3>Dialogs</h3>
 				<Dialog dialog_avatar="https://source.unsplash.com/200x200/?people" dialog_name="Vladimir" dialog_current={false} />
@@ -30,7 +30,7 @@ const Dialogs = (props: any) => {
 					<button type="submit">Send</button>
 				</form>
 			</div>
-		</main>
+		</div>
 	)
 }
 
